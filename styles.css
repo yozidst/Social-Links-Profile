@@ -1,0 +1,62 @@
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-off-black: hsl(0, 0%, 8%);
+
+    --font-size: 14px;
+    --ff: "Inter", serif;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Inter-Regular';
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-size: var(--font-size);
+    background-color: var(--color-off-black);
+    min-width: 100vh;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--color-dark-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
